@@ -59,3 +59,37 @@ class PaiNN(nn.Module):
             contributions to the overall molecular property prediction.
         """
         raise NotImplementedError
+
+
+class PaiNNMessage(nn.Module):
+    """
+    Message Part of Polarizable Atom Interaction Neural Network with PyTorch.
+    """
+    def __init__(
+        self,
+    ) -> None:
+        super().__init__()
+        raise NotImplementedError
+
+
+    def forward(
+        self,
+    ) -> torch.FloatTensor:
+        raise NotImplementedError
+    
+
+class PaiNNUpdate(nn.Module):
+    """
+    Update Part of Polarizable Atom Interaction Neural Network with PyTorch.
+    """
+    def __init__(
+        self,
+    ) -> None:
+        super().__init__()
+        raise NotImplementedError
+
+
+    def forward(
+        self,
+    ) -> torch.FloatTensor:
+        raise NotImplementedError
